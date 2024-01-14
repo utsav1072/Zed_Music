@@ -70,7 +70,7 @@ li {
     margin-left: 70px;
     margin-top: 50px;
     margin-right: 70px;
-    background-color:rgba(187, 0, 0, 0.424);
+    background-color:rgba(149, 2, 2, 0.369);
     border-radius: 20px;
     position: relative;
 }
@@ -123,7 +123,7 @@ li p{
 
 .center_logo{
     height: 500px;
-    width: 600px;
+    width: 800px;
     position: relative;
     left: 700px;
     bottom: 300px;
@@ -167,22 +167,102 @@ li p{
 
 #logo_text_big{
     display: inline-block;
-    font-size: 150px;
+    font-size: 250px;
     position: relative;
     left: -110px;
 }
 
-.red_text::before {
-    content: ''; /* Empty content for pseudo-element */
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: white;
-    overflow: hidden;
-    width: 0;
-    transition: width 0.5s; /* Adjust the duration as needed */
+#logo_text_big,#logo_text{
+    font-family: "Mountains of Christmas", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.red_text:hover::before {
-    width: 100%;
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+    .nav {
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+    .main_navigation {
+        width: 80%;
+        margin: 20px;
+        position: relative;
+        left: 20px;
+        right: auto;
+    }
+    ul.mainnav{
+        width: 90%;
+    }
+
+    ul.mainnav li {
+        margin-right: 40px;
+        position: relative;
+        left: 30px;
+    }
+
+    .box_for_max_navigation li {
+        margin-left: 40px;
+        margin-top: 30px;
+    }
+
+    .center_logo {
+        display: inline-flexblock;
+        position: absolute;
+        left: 20px;
+        top: 50px;
+        width: 80%;
+        text-align: center;
+    }
+
+
+    .center_logo img {
+        height: 0px;
+        width: 70px;
+    }
+
+    #main_logo, #logo_text {
+        left: -10px;
+    }
+
+    #logo_text {
+        font-size: 20px;
+        left: -20px;
+    }
+
+    #main_logo {
+        left: -10px;
+    }
+
+    .complete_logo {
+        display: block;
+        text-align: center;
+        position: relative;
+        left: 9px;
+        bottom: 10px;
+    }
+
+    #logo_text_big {
+        font-size: 0px;
+        left: -30px;
+    }
+    ul#righttop{
+        margin: 0;
+    }
+    .Handles_n_logo{
+        position: absolute;
+        width: fit-content;
+        bottom: 10rem;
+        left: 37%;
+        
+    }
+    .music_player_container{
+        height: 100px;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+    }
+
 }

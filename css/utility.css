@@ -1,9 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap')
+
 .red_text{
     position: relative;
     display: inline-block;
     color: red;
 }
-
+.top_nav{
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+}
+.top_nav_current{
+    position: relative;
+    display: inline-block;
+    color: red;
+    font-size: 16px;
+}
 ul {
     list-style-type: none;
     margin-right: 90px;
@@ -37,7 +51,15 @@ a .red_text::before {
     transition: width 0.5s; /* Adjust the duration as needed */
 }
 
-a .red_text p:hover::before {
+a .red_text:hover::before {
     width: 100%;
 }
 
+
+
+.top_nav:hover {
+    color: red;
+}
+.top_nav_current:hover{
+    color: white;
+}

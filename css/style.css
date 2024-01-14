@@ -1,0 +1,188 @@
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+html,body{
+    width: 100%;
+    height:100%;
+    color: white;
+    position: relative;
+}
+
+
+
+p,h1{
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.main {
+    background-color: rgba(0, 0, 0, 0.7);
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    background-attachment:fixed ;
+    background-blend-mode: multiply;
+}
+
+.Handles_n_logo{
+    display:inline-flex;
+    float:right;
+}
+
+li {
+    display: inline;
+    margin-right: 15px;
+}
+
+#logo{
+    margin-right: 60px;
+    margin-left: 0px;
+    font-size: 30px;
+}
+
+.main_logo{
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    margin-top: 30px;
+    margin-left: 90px;
+    display: inline-flexblock;
+}
+
+.main_navigation{
+    height: 450px;
+    width: 280px;
+    display: flexbox;
+    margin-left: 70px;
+    margin-top: 50px;
+    margin-right: 70px;
+    background-color:rgba(187, 0, 0, 0.424);
+    border-radius: 20px;
+    position: relative;
+}
+
+ul.mainnav li{
+    margin-right:50px;
+}
+
+
+
+li p{
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+.nav_box{
+    justify-content: center;
+}
+.main_navigation li {
+    background-position: center;
+}
+
+.box_for_max_navigation{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top : 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.box_for_max_navigation li{
+    display:list-item;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.music_player_container{
+    height: 200px;
+    width: 100%;
+    display: flexbox;
+    background-color: rgba(0, 0, 0, 0.537);
+    position: fixed;
+    bottom: 0;
+    
+}
+
+.center_logo{
+    height: 500px;
+    width: 600px;
+    position: relative;
+    left: 700px;
+    bottom: 300px;
+    
+}
+.center_logo h1{
+    display: inline-block;
+    font-size: 120px;
+    margin: 0;
+    padding: 0;
+}
+
+.center_logo img{
+    display: inline;
+    height: 300px;
+    width: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+#main_logo,#logo_text{
+    position: relative;
+    left: -30px;
+}
+
+#logo_text{
+    font-size: 30px;
+    position: relative;
+    left: -40px;
+}
+#main_logo{
+    position: relative;
+    left: -30px;
+}
+
+.complete_logo{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+#logo_text_big{
+    display: inline-block;
+    font-size: 150px;
+    position: relative;
+    left: -110px;
+}
+
+.red_text::before {
+    content: ''; /* Empty content for pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    overflow: hidden;
+    width: 0;
+    transition: width 0.5s; /* Adjust the duration as needed */
+}
+
+.red_text:hover::before {
+    width: 100%;
+}

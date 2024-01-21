@@ -385,14 +385,6 @@ li p{
         height: 0 ;
     }
 
-    .slide_bar{
-        width: 50%;
-        display: inline-flexblock;
-        position: absolute;
-        left: 23%;
-        right: auto;
-        top: 64%;
-    }
 
     #loginSignup{
         position: absolute;
@@ -401,17 +393,14 @@ li p{
     }
     .slide_bar{
         position: absolute;
-        display: flex;
         top:90%;
         width: 98%;
         left: 1%;
         overflow: hidden;
         justify-content: center;
     }
-    .slider{
-        position: relative;
-        justify-content: center;
-    }
+
+    
     .music_controls{
         position: absolute;
         left: 65%;

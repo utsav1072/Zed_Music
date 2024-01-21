@@ -12,11 +12,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap" rel="stylesheet">
+    <script src="main.js" ></script>
 </head> 
 <body class = "main">
      
     <div class = "Handles_n_logo">
         <ul id = "righttop">
+            <li class="red_text" id="loginSignup"><a href="html/login_html.html"><p class="top_nav">Login</p></a></li>
             <div class="complete_logo">
                 <li><img  class="logos" id = "main_logo" src="img/logo.svg" ></li>
                 <li class="red_text" id = "logo_text">ZED</li>
@@ -30,7 +32,7 @@
     <div class="nav">
         <ul class = "mainnav">  
             <li><a href=""><p class="top_nav_current">Home</p></a></li>
-            <li><a href=""><p class="top_nav">Library</p></a></li>
+            <li><a href="html/library.html"><p class="top_nav">Library</p></a></li>
             <li><a href=""><p class="top_nav">Explore</p></a></li> 
         </ul>
     </div>
@@ -50,9 +52,13 @@
         <li class="red_text" id = "logo_text_big">ZED</li>
     </div>
     <div class="music_player_container">
-
+        <div class = "song_img_container"><img src="img/song temp.png"s> <p class = "song_name">Wish You were here </p> <p class="artist">Pink floyyd</p></div>
+        <div class="music_controls">
+            <img class="logos" src="img/shuffle.svg" ><img src="img/seek_track1.png"><img src="img/play_png.png" ><img src="img/seek_track2.png"><img src="img/loop.png" >
+        </div>
+        <div class = "slide_bar">
+            <input type="range" id="song_time_stamp" class="slider" value="0" min="0" max="50" oninput="rangeslide(this.value)">
+        </div>
     </div>
-
-
 </body>
 </html>

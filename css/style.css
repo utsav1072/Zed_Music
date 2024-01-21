@@ -17,6 +17,11 @@ html,body{
     color: white;
     position: relative;
 }
+body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
 
 
 
@@ -35,10 +40,14 @@ p,h1{
     background-attachment:fixed ;
     background-blend-mode: multiply;
 }
-
+.mainnav{
+    width: fit-content;
+}
 .Handles_n_logo{
-    display:inline-flex;
+    display:inline-flexbox;
     float:right;
+    position: relative;
+    margin-top: 0px;
 }
 
 li {
@@ -112,13 +121,12 @@ li p{
 }
 
 .music_player_container{
-    height: 200px;
+    height: 90px;
     width: 100%;
-    display: flexbox;
+    display: flex;
     background-color: rgba(0, 0, 0, 0.537);
     position: fixed;
     bottom: 0;
-    
 }
 
 .center_logo{
@@ -177,35 +185,134 @@ li p{
     font-weight: 400;
     font-style: normal;
 }
+.slide_bar{
+    width: 30%;
+    position: absolute;
+    height: 5px;
+    left: 41%;
+    top: 30%;
+    background-color: rgba(255, 255, 255, 0.234);
+}
+.slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+    top: -13px;
+}
 
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none; 
+    height: 12px;
+    width: 12px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+  }
+  .slider::-webkit-slider-thumb:hover {
+    background-color: rgb(255, 0, 0);  
+  }
+
+  
+.song_img_container{
+    position: absolute;
+    width: 35%;
+    height: 50px;
+    top: 14%;
+    left: 2%;
+}
+ .song_img_container img{
+    width: 50px;
+    height: 100%;
+ }
+ .song_img_container p{
+    position: absolute;
+    font-family: Poppins;
+    font-size: 17px;
+    left:8%;
+    margin-left: 30px;
+    bottom: 25%;
+ }
+ p.artist{
+    position: relative;
+    font-size: 15px;
+    width: fit-content;
+    color: red;
+    bottom: 80%;
+ }
+
+.music_controls{
+    width: 30% ;
+    height: 20px;
+    position: absolute;
+    left: 41%;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    
+} 
+
+.music_controls img{
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+#loginSignup{
+    position: relative;
+    margin-right: 50px;
+    margin-bottom: 0;
+    font-size: 18px;
+    top:-5px;
+}
+  
+
+  
+/*------------------------------------------------------------------------------*/
 
 /* Mobile Styles */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 826px) {
     .nav {
+        position: relative;
         margin-top: 10px;
         margin-left: 20px;
+        top: 15%;
     }
 
     .main_navigation {
         width: 80%;
+        height: 45%;
         margin: 20px;
         position: relative;
-        left: 20px;
-        right: auto;
+        left: 3%;
+        top: 17%;
     }
     ul.mainnav{
         width: 90%;
+        position: relative;
     }
 
     ul.mainnav li {
-        margin-right: 40px;
+        margin-right: 30px;
         position: relative;
         left: 30px;
+        
     }
-
+    ul.box_for_max_navigation{
+        overflow-y: scroll;
+    }
     .box_for_max_navigation li {
         margin-left: 40px;
-        margin-top: 30px;
+        margin-top: 20%;
     }
 
     .center_logo {
@@ -252,9 +359,10 @@ li p{
         margin: 0;
     }
     .Handles_n_logo{
+        display: inline-block;
         position: absolute;
         width: fit-content;
-        bottom: 10rem;
+        top: 3%;
         left: 37%;
         
     }
@@ -264,5 +372,59 @@ li p{
         position: fixed;
         bottom: 0;
     }
+    li.nav_box{
+        margin: 0;
+        position: relative;
+        left: 5vh;
+        width: fit-content;
+        padding-top: 20px ;
+        padding-bottom: 5%;
 
+    }
+    div.center_logo{
+        height: 0 ;
+    }
+
+    .slide_bar{
+        width: 50%;
+        display: inline-flexblock;
+        position: absolute;
+        left: 23%;
+        right: auto;
+        top: 64%;
+    }
+
+    #loginSignup{
+        position: absolute;
+        top: 100%;
+        left: 18%;
+    }
+    .slide_bar{
+        position: absolute;
+        display: flex;
+        top:90%;
+        width: 98%;
+        left: 1%;
+        overflow: hidden;
+        justify-content: center;
+    }
+    .slider{
+        position: relative;
+        justify-content: center;
+    }
+    .music_controls{
+        position: absolute;
+        left: 65%;
+        width: 30%;
+        overflow: hidden;
+    }
+    .song_img_container{
+        width: 70%;
+    }
+    p.song_name{
+        font-size: 14px;
+    }
+    p.artist{
+        font-size: 12px;
+    }
 }
